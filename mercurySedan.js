@@ -15,12 +15,12 @@ console.log(v.make)
 class Car extends Vehicle {
     constructor(make, model, year, color, mileage, maximumPassengers, passengers, numberOfWheels, maximumSpeed, fuel, scheduleService) {
         super(make, model, year, color, mileage);
-        this.maximumPassengers = maximumPassengers;
-        this.passengers = passengers;
-        this.numberOfWheels = numberOfWheels;
-        this.maximumSpeed = maximumSpeed;
-        this.fuel = fuel;
-        this.scheduleService = scheduleService;
+        this.maximumPassengers = 5;
+        this.passengers = 0;
+        this.numberOfWheels = 4;
+        this.maximumSpeed = 160;
+        this.fuel = 10;
+        this.scheduleService = false;
     }
     loadPassenger(num) {
         if (this.passengers < this.maximumPassengers) {
@@ -55,8 +55,8 @@ class Car extends Vehicle {
 
 //You can use the same instance "v" of the Vehicle class above for the base class.
 
+const myCar = new Car('Mercury', 'Sedan', '1965', 'red', 40000)
 
-
-
-
-//Create at least two new instances of the Car class and test them here:
+myCar.loadPassenger(5)
+myCar.start()
+myCar.scheduleService()
