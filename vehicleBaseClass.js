@@ -85,19 +85,6 @@ class Vehicle {
     }
 }
 
-// class extend of parent class and properties
-class Car extends Vehicle {
-    constructor(make, model, year, color, mileage, maximumPassengers, passengers, numberOfWheels, maximumSpeed, fuel, scheduleService) {
-        super(make, model, year, color, mileage)
-        this.maximumPassengers = maximumPassengers
-        this.passengers = passengers
-        this.numberOfWheels = numberOfWheels
-        this.maximumSpeed = maximumSpeed
-        this.fuel = fuel
-        this.scheduleService = scheduleService
-    }
-}
-
 //This exports things you want to use from this "module", more info in readme
 module.exports = {
     Vehicle
