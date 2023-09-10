@@ -85,6 +85,7 @@ class Vehicle {
     }
 }
 
+// class extend of parent class and properties
 class Car extends Vehicle {
     constructor(make, model, year, color, mileage, maximumPassengers, passengers, numberOfWheels, maximumSpeed, fuel, scheduleService) {
         super(make, model, year, color, mileage)
